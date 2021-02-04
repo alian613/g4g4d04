@@ -1,7 +1,6 @@
 var Homework = {
 };
 
-!function () {
     Homework.sample = function () {
         for (let i = 1; i <= 9; i++) {
             for (let j = 1; j <= 9; j++) {
@@ -24,4 +23,3 @@ var Homework = {
         body.getElementsByTagName('tr')[multiplier - 1].appendChild(td);
         document.getElementById('table').style.display = 'block';
     }
-}();
