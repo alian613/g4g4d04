@@ -1,6 +1,12 @@
 var Homework = {
 };
 
+document.getElementById("sampleBtn").addEventListener('click', function (event) {
+    if (document.getElementById('table').style.display === 'none')
+        Homework.sample();
+});
+
+!function () {
     Homework.sample = function () {
         for (let i = 1; i <= 9; i++) {
             for (let j = 1; j <= 9; j++) {
@@ -9,7 +15,7 @@ var Homework = {
         }
     }
 
-    /**
+    /**https://codepen.io/alian13/pen/poNggwO
      * 
      * @param {number} multiplicand 
      * @param {number} multiplier 
@@ -23,3 +29,4 @@ var Homework = {
         body.getElementsByTagName('tr')[multiplier - 1].appendChild(td);
         document.getElementById('table').style.display = 'block';
     }
+}();
