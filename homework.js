@@ -1,11 +1,11 @@
 var Homework = {
 };
 
-window.onload = function() {
-document.getElementById("sampleBtn").addEventListener('click', function (event) {
-    if (document.getElementById('table').style.display === 'none')
-        Homework.sample();
-});
+window.onload = function () {
+    document.getElementById("sampleBtn").addEventListener('click', function (event) {
+        if (document.getElementById('table').style.display === 'none')
+            Homework.sample();
+    });
 };
 
 
