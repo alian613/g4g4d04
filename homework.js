@@ -1,11 +1,6 @@
 var Homework = {
 };
 
-document.getElementById("sampleBtn").addEventListener('click', function (event) {
-    if (document.getElementById('table').style.display === 'none')
-        Homework.sample();
-});
-
 !function () {
     Homework.sample = function () {
         for (let i = 1; i <= 9; i++) {
@@ -30,3 +25,8 @@ document.getElementById("sampleBtn").addEventListener('click', function (event) 
         document.getElementById('table').style.display = 'block';
     }
 }();
+
+document.getElementById("sampleBtn").addEventListener('click', function (event) {
+    if (document.getElementById('table').style.display === 'none')
+        Homework.sample();
+});
